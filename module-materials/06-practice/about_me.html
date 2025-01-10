@@ -66,16 +66,20 @@
             clear: both;
         }
 
-        .about_me {
+        .about_me, .biography {
             font-size: 1.5rem;
             text-align: left;
             padding: 10px;
+            background-color: #d4eefc;
+            border-radius: 5px;
+        }
+
+        .biography {
+            width: 1200;
         }
 
         .text_window {
             width: 600px;
-            background-color: #d4eefc;
-            border-radius: 5px;
         }
 
         footer {
@@ -87,6 +91,16 @@
             color: #cfdbe3;
             text-align: right;
             font-style: italic;
+        }
+
+        .avatar_wrapper {
+            padding: 10px 50px 0 0;
+        }
+
+        .avatar {
+            width: 450px;
+            border-radius: 50%;
+            float: right;
         }
 
     </style>
@@ -106,12 +120,29 @@
         <div class='clearfix'></div>
     </header>
 
-    <h1>Учебный сайт-визитка Вячеслава Данькова</h1>
+    <section class="avatar_wrapper">
+        <img src="avatar.jpg" alt="Моё фото" class="avatar" />
+    </section>
+    
+    <h1>Обо мне</h1>
 
     <section class="text_window">
         <p class="about_me">
-            Информация обо мне. В разработке.
+            Начинающий разработчик. В январе 2023 года решил попробовать себя в программировании. Изучение начал с Python, неплохо его освоил и именно в процессе обучения этому языку усвоил основные, базовые концепции программирования. Затем переключился на C#, стал изучать другие необходимые каждому программисту технологии. Немного ознакомился с SQL, разобрался с GIT. Т.к. в перспективе я бы хотел стать Fullstack разработчиком, также познакомился с HTML и CSS.
         </p>
+        
+        <h2>Биография</h2>
+        
+        <p class="biography">
+            Дата рождения, информация об образовании и опыте работы т.д.
+        </p>
+
+        <h2>Мировоззрение, отношение к жизни</h2>
+
+        <p class="biography">
+            Как я смотрю на мир, что могут от меня ожидать люди, которые планируют со мной работу и сотрудничество.
+        </p>
+
     </section>
 
     <footer>
