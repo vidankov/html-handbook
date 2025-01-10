@@ -8,56 +8,58 @@
         header, body {
             width: 1200px;
             margin: 0px auto 0px auto;
-            color: #2b3333;
             font-family: Calibri;
         }
 
         header {
-            background-color: ghostwhite;
-            margin-bottom: 75px;
-        }
-
-        header h1 {
-            padding: 10px;
+            background-color: #3d84ad;
+            border-bottom-style: inset;
+            border-bottom-width: 2px;
+            border-bottom-color: #266c94;
         }
 
         ul.menu {
             list-style: none;
-            line-height: 1.75rem;
-            font-size: 1.75rem;
-            padding: 10px;
+            line-height: 1.5rem;
+            font-size: 1.5rem;
+            padding: 10px 10px 22px 10px;
         }
 
         ul.menu li {
             float: left;
-            background-color: khaki;
+            background-color: #d4eefc;
             padding: 5px;
+            border-style: outset;
+            border-width: 2px;
+            border-color: #266c94;
+        }
+
+        ul.menu li:hover {
+            border-style: inset;
         }
 
         ul.menu li a {
             text-decoration: none;
         }
 
-        ul.menu li:hover {
-            opacity: 75%;
-        }
-
         ul.menu li:first-child {
             padding-left: 10px;
-            border-right-style: dotted;
-            border-right-width: 1px;
-            border-right-color: burlywood;
-            border-bottom-left-radius: 7.5px;
-            border-top-left-radius: 7.5px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        ul.menu li:first-child,
+        ul.menu li:nth-child(2) {
+            border-right-style: solid;
+            border-right-width: 0px;
         }
 
         ul.menu li:last-child {
             padding-right: 10px;
-            border-left-style: dotted;
-            border-left-width: 1px;
-            border-left-color: burlywood;
-            border-bottom-right-radius: 7.5px;
-            border-top-right-radius: 7.5px;
+            border-left-style: solid;
+            border-left-width: 0px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
         }
 
         .clearfix {
@@ -66,7 +68,14 @@
 
         .greeting {
             font-size: 1.5rem;
-            text-align: center;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .text_window {
+            width: 600px;
+            background-color: #d4eefc;
+            border-radius: 5px;
         }
 
     </style>
@@ -82,14 +91,15 @@
                 <li><a href=".\my_services.html">Мои услуги</a></li>
                 <li><a href=".\contacts.html">Контакты</a></li>
             </ul>
-            <div class='clearfix'></div>
         </nav>
-        <h1>Учебный сайт-визитка Вячеслава Данькова</h1>
+        <div class='clearfix'></div>
     </header>
 
-    <section>
+    <h1>Учебный сайт-визитка Вячеслава Данькова</h1>
+    
+    <section class="text_window">
         <p class="greeting">
-            Приветствую! Выберите интересующий раздел через меню в шапке сайта. Спасибо!
+            Приветствую! <br> Выберите интересующий раздел через меню в шапке сайта. Спасибо!
         </p>
     </section>
 
