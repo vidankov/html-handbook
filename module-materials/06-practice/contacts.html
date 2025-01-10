@@ -74,15 +74,31 @@
         }
 
         .contact_info {
+            width: 255px;
             background-color: #d4eefc;
             border-radius: 5px;
         }
 
         .contact_info ul {
             list-style: none;
+            padding: 0px;
         }
 
-        img.logo {
+        .contact_info ul li a {
+            display: block;
+            width: 75px;
+            height: 75px;
+            float: left;
+            background-image: url("./sprite_for_study_site.png");
+            margin: 5px;
+        }
+
+        a.email {
+            background-position-x: 75px;
+        }
+
+        a.phone {
+            background-position-x: 150px;
         }
 
         footer {
@@ -117,22 +133,19 @@
     <section class="contact_info">
         <ul>
             <li>
-                <div class="test">s</div>
-                <img src="#" alt="Значок телефона" class="logo phone_logo"/>
-                +7(000)000-00-00
+                <a href="mailto:vidankov@yandex.ru" class="email"></a>
             </li>
 
             <li>
-                <img src="#" alt="Значок Email" class="logo email_logo"/>
-                vidankov@yandex.ru
+                <a href="tel:+79990000000" class="phone"></a>
             </li>
 
             <li>
-                <img src="#" alt="Значок ВК" class="logo VK_logo"/>
-                <a href="https://vk.com/id863127" target="_blank">написать мне вконтакте</a>
+                <a href="https://vk.com/id863127" target="_blank" class="vk"></a>
             </li>
-
         </ul>
+        <div class='clearfix'></div>
+
     </section>
 
     <footer>
